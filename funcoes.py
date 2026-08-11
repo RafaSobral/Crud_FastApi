@@ -103,7 +103,10 @@ def deletar_aluno(aluno_id: int):
         (aluno_id,)
     )
     conectar.commit()
+    aluno_deletado = cursor.rowcount > 0
     conectar.close()
+
+    return aluno_deletado
 
 
     
