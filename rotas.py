@@ -102,6 +102,7 @@ def atualizar_aluno(
     "/{aluno_id}",
     summary="Deletar aluno"
 )
+
 def deletar_aluno(aluno_id: int):
     aluno_deletado = funcoes.deletar_aluno(aluno_id)
 
