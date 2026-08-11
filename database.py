@@ -11,7 +11,7 @@ def criar_tabela_alunos():
     conectar = conexao_banco()
 
     conectar.execute("""
-        CREATE TABLE IF NOT EXISTS usuarios (
+        CREATE TABLE IF NOT EXISTS alunos (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nome TEXT NOT NULL,
             idade INTEGER NOT NULL,
